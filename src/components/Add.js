@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
-  
+import {Result} from './Result' 
+
+
 export const Add = () => {
     const [query,setQuery] = useState(" ");
     const [results, setResults] = useState([]);
@@ -19,13 +21,17 @@ export const Add = () => {
     };
 
     return (
+        
         <div className="add-content">
         <div className="searchbar">
             <input type="text" placeholder="Search for a movie" value={query} onChange={onChange}/>
         </div>
             {results.length > 0 && (
                 <ul className="results">
-                {results.map((movie) => (<li>{movie.title}</li>))}
+                {results.map((movie) => (
+                    <li key={movie.id}>
+                        <Result movie={movie}/> 
+                    </li>))}
                 </ul>
             )}
         </div>
