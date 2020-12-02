@@ -3,8 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {Header} from './components/Header';
 import {Watchlist} from './components/Watchlist';
-import {Watched} from './components/Watched';
-import {Add} from './components/Add';
+import {Search} from './components/Search';
 import {GlobalProvider} from './context/GlobalState';
 
 import './App.css';
@@ -19,8 +18,7 @@ function App() {
             <Header />
             <Switch>
                 <Route path="/watchlist" component={Watchlist}/>
-                <Route path="/Watched" component={Watched} />
-                <Route path="/Add" component={Add} />
+                <Route path="/" component={Search} />
             </Switch>
         </div>  
       </Router>

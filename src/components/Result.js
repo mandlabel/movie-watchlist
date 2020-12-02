@@ -11,14 +11,17 @@ export const Result = ({movie}) => {
 
     return (
         <div className="result-cont">
-            <div className="poster-wrapper">
+            <div className="poster-cont">
                 {movie.poster_path ? (
                     <img
                     src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
                     alt={`${movie.title} Poster`}
                     />
                 ) : (
-                    <div className="filler-poster" />
+                    <div className="no-img-content">
+                        <img src={`https://london.webformance.hu/hirlevelek/elt/index.php?img=di.bak/unknown.png`}
+                        alt={`Unknown Poster`} />
+                    </div>
                 )}
             </div>
             <div className="info">

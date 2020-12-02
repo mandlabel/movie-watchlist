@@ -2,10 +2,9 @@ import React, {useState} from 'react'
 import {Result} from './Result' 
 
 
-export const Add = () => {
+export const Search = () => {
     const [query,setQuery] = useState(" ");
     const [results, setResults] = useState([]);
-    const API_KEY='';
     const onChange = (e) => {
         e.preventDefault();
         setQuery(e.target.value);
@@ -23,17 +22,20 @@ export const Add = () => {
     return (
         
         <div className="add-content">
+            <h3>Search a movie: </h3>
         <div className="searchbar">
             <input type="text" placeholder="Search for a movie" value={query} onChange={onChange}/>
         </div>
-            {results.length > 0 && (
-                <ul className="results">
-                {results.map((movie) => (
-                    <li key={movie.id}>
-                        <Result movie={movie}/> 
-                    </li>))}
-                </ul>
-            )}
+            <div className="movie-results">
+                {results.length > 0 && (
+                    <ul>
+                    {results.map((movie) => (
+                        <li key={movie.id}>
+                            <Result movie={movie}/> 
+                        </li>))}
+                    </ul>
+                )}
+            </div>
         </div>
 
     )

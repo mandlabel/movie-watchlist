@@ -25,6 +25,8 @@ export const GlobalProvider = props => {
     const removeMovie = (id) => {
         dispatch({type: "REMOVE_MOVIE_FROM_WATCHLIST", payload: id});
     };
+
+
     return ( 
     <GlobalContext.Provider value={{
         watchlist: state.watchlist, 

@@ -1,31 +1,56 @@
 .App {
-    text-align: center;
-    color: black;
+  text-align: center;
+  color: black;
 }
-  
+
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 10vh;
-    background: rgb(73,79,82);
-    color:white;
-    font-family: Georgia, serif;
-  }
-  .nav-links {
-    width:40%;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-  }
-  a {
-      color: white;
-      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  }
-  input[type=text] {
-    width: 60%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(73,79,82);
+  color:white;
+  font-family: Georgia, serif;
+}
+.nav-links {
+  width:40%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+a {
+  color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 15px;
+}
+input[type=text] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  column-count: 3;
+  width: 50%;
+}
+ul {
+  list-style: none;
+  align-items:center;
+}
+.result-cont {
+  padding: 5px 10px;
+  align-items: center;
+}
+.watchlist-movies {
+  column-count: 3;
+  justify-content: space-around;
+}
+.overlay {
+  padding: 10px;
+}
