@@ -11,7 +11,7 @@ export const Watchlist = () => {
             </div>
             <div className="watchlist-movies">
                 {watchlist.length > 0 ? (
-                    <div className="movie-grid">
+                    <div className="movies_watchlist_cont">
                         {watchlist.map((movie) => (
                             <MovieBlock movie={movie} key={movie.id} type="watchlist" />
                         ))}

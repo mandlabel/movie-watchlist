@@ -25,7 +25,7 @@ export const Result = ({movie}) => {
                 )}
             </div>
             <div className="info">
-                <div className="header">
+                <div className="desc">
                     <h3 className="title">{movie.title}</h3>
                     <h4 className="release">
                         {movie.release_date ? movie.release_date.substring(0, 4) : '-'}

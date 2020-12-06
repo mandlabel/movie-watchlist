@@ -2,15 +2,16 @@
   text-align: center;
   color: black;
 }
-
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
   background: rgb(73,79,82);
-  color:white;
-  font-family: Georgia, serif;
+}
+.desc {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 15px;
 }
 .nav-links {
   width:40%;
@@ -21,36 +22,42 @@ header {
   color: white;
 }
 a {
-  color: white;
+  color: coral;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 15px;
+  font-size: 20px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  text-decoration: none; 
+}
+a:hover {
+  background-color: black;
 }
 input[type=text] {
   width: 60%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+  border-color: lightblue;
+  background-color: lightgray;
+  color: black;
 }
 li {
   list-style: none;
-  align-items: center;
-  justify-content: space-around;
-  display: flex;
-  column-count: 3;
-  width: 50%;
 }
-ul {
-  list-style: none;
-  align-items:center;
+img {
+  border-style: inset;
+  border-width: 7px;
+  border-color: coral;  
 }
 .result-cont {
   padding: 5px 10px;
   align-items: center;
 }
-.watchlist-movies {
-  column-count: 3;
-  justify-content: space-around;
+.movies_watchlist_cont {
+  display: grid;
+  grid-template-columns:33% 33% 33%;
 }
 .overlay {
-  padding: 10px;
+  padding: 5px;
 }
