@@ -1,6 +1,6 @@
+// Kereső
 import React, {useState} from 'react'
 import {Result} from './Result' 
-
 
 export const Search = () => {
     const [query,setQuery] = useState(" ");

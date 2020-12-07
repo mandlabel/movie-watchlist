@@ -1,3 +1,4 @@
+// Fejléc, navigáció
 import React from 'react'
 import {Link} from 'react-router-dom';
 export const Header = () => {
@@ -8,7 +9,7 @@ export const Header = () => {
                 <Link to="/watchlist" classname="nav-btn">Watch List</Link>
             </li>
             <li>
-                <Link to="/add" className="nav-btn">Movie Search</Link>    
+                <Link to="/search" className="nav-btn">Movie Search</Link>    
             </li>
         </ul>
         </header>
