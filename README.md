@@ -7,6 +7,3 @@ A Search Movie fülön a keresőbe beírhatjuk a kívánt film címét, ami már
 Minden film alatt található egy "Add to WatchList" gomb, amire rányomva a filmünk bekerül a 'Watch List' fülön található oldalra, és ezt meg is jegyzi a felhasználónak az oldal újratöltése után. (A keresőben kiszűrt filmek közül, úgy látjuk ha valami már szerepel a WatchList-en, hogy az adott gomb nem használható (disabled) állapotban van)
 
 A Watch List fülön találjuk a kívánságlistát, a filmeket amiket megszeretnénk tekinteni a jövőben. Ezt a listát bármikor bővíthetjük a Search Movie fülről elérhető összes film közül bármelyikkel, vagy akár törölhetünk is a listáról ha meggondoltuk magunkat.
-
-Jövőbeni tervek:
-A WatchList-en egy Watched gomb létrehozása a felsorolt filmek mindegyikéhez, ami valami féle jelzést ad az adott filmre, amit már láttunk!
