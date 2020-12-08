@@ -9,11 +9,13 @@ export const Result = ({movie}) => {
 
     let storedMovie = watchlist.find(o => o.id === movie.id);
     const watchlistDisabled = storedMovie ? true : false;
+
     var buttontext = 'Add';
     if( watchlistDisabled === true) { buttontext = 'Added';
     } else {
         buttontext = 'Add';
     }
+    
     return (
         <div className="result-cont">
             <div className="poster-cont">
