@@ -1,7 +1,7 @@
 // Egy film blokkja a watchlisten.
 import React from 'react';
-import {RemoveMovie} from './RemoveMovie'
-export const MovieBlock = ({ movie, type }) => {
+import {MovieControls} from './MovieControls'
+export const MovieBlock = ({ movie }) => {
     return (
     <div className="overlay">
         <h3>{movie.title}</h3>
@@ -14,7 +14,7 @@ export const MovieBlock = ({ movie, type }) => {
             <div className="filler-poster" />
          )}
 
-         <RemoveMovie movie={movie} />
+         <MovieControls movie={movie} />
     </div>
     )
 }

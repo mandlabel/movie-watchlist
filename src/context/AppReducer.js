@@ -12,6 +12,26 @@ export default (state, action) =>
                 watchlist: state.watchlist.filter(
                 (movie) => movie.id !== action.payload
                 ),
+                // töröljük, hogy láttuk
+                watched: state.watched.filter(
+                (movie) => movie.id !== action.payload
+                ),
+            };
+        case "SET_MOVIE_TO_WATCHED": 
+            return {
+                ...state,
+                watchlist: state.watchlist.filter(
+                (movie) => movie.id !== action.payload
+                ),
+                watched: [action.payload, ...state.watched],   
+                
+            };
+        case "SET_MOVIE_TO_UNWATCHED": 
+            return {
+                ...state,
+                watched: state.watched.filter(
+                (movie) => movie.id !== action.payload
+                ),
             };
         default:
             return state;  

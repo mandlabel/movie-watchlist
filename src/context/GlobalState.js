@@ -5,16 +5,20 @@ import AppReducer from "./AppReducer";
 const initialState = {
     watchlist: localStorage.getItem('watchlist') ? JSON.parse(localStorage.getItem('watchlist')) : [],
 };
+const watchedState = {
+    watched: localStorage.getItem('watched') ? JSON.parse(localStorage.getItem('watched')) : [],
+}
 
 // create context
-export const GlobalContext = createContext(initialState);
+export const GlobalContext = createContext({...initialState, ...watchedState});
 
 // provider components
 export const GlobalProvider = props => {
-    const [state, dispatch] = useReducer(AppReducer, initialState);
+    const [state, dispatch] = useReducer(AppReducer, {...initialState, ...watchedState});
 
     useEffect(() => {
         localStorage.setItem('watchlist', JSON.stringify(state.watchlist))
+        localStorage.setItem("watched", JSON.stringify(state.watched));
     }, [state])
 
     // actions
@@ -24,6 +28,12 @@ export const GlobalProvider = props => {
     const removeMovie = (id) => {
         dispatch({type: "REMOVE_MOVIE_FROM_WATCHLIST", payload: id});
     };
+    const setMovieWatched = (movie) => {
+        dispatch({ type: "SET_MOVIE_TO_WATCHED", payload: movie });
+    }
+    const setMovieUnWatched = (id) => {
+        dispatch({ type: "SET_MOVIE_TO_UNWATCHED", payload: id });
+    }
     
     
     return ( 
@@ -32,6 +42,8 @@ export const GlobalProvider = props => {
         watched: state.watched, 
         addMovieToWatchlist,
         removeMovie,
+        setMovieWatched,
+        setMovieUnWatched,
         }}>
         {props.children}
     </GlobalContext.Provider>
