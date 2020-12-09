@@ -2,7 +2,7 @@
 import React, {useContext} from 'react';
 import {GlobalContext} from '../context/GlobalState';
 
-export const Result = ({movie}) => {
+export const NewMovies = ({movie}) => {
     const {
         addMovieToWatchlist, watchlist
     } = useContext(GlobalContext);
@@ -31,19 +31,12 @@ export const Result = ({movie}) => {
                     </div>
                 )}
             </div>
-            <div className="info">
-                <div className="desc">
+            <div className="upcoming-info">
+                <div className="upcoming-datas">
                     <h2 className="title">{movie.title}</h2>
                     <h3 className="release">
-                        Release: {movie.release_date ? movie.release_date.substring(0, 4) : '-'}
-                    </h3>
-                    <h3 className="rating">
-                        Rating: {movie.vote_average}
-                    </h3>
-                    <h5 className="overview">
-                        {movie.overview}
-                    </h5>
-                    
+                        Release Date: {movie.release_date}
+                    </h3>    
                 </div>
                 <div className="controls">
                     <button className="ctrl-btn" disabled={watchlistDisabled} onClick={() => addMovieToWatchlist(movie)}>

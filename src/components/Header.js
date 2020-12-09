@@ -6,10 +6,13 @@ export const Header = () => {
         <header>
         <ul className="nav-links">
             <li>
-                <Link to="/watchlist" classname="nav-btn">Watch List</Link>
+                <Link to="/watchlist" className="nav-btn">Watch List</Link>
             </li>
             <li>
                 <Link to="/search" className="nav-btn">Movie Search</Link>    
+            </li>
+            <li>
+                <Link to="/upcoming" className="nav-btn">Upcoming Movies</Link>    
             </li>
         </ul>
         </header>

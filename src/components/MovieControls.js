@@ -19,14 +19,14 @@ export const MovieControls = ({movie}) => {
     const watchedMovie = themovieWatched ? true : false;
 
     return (
-        <div className="moviecard-control">
-            <button className="ctrl-btn" onClick={() => removeMovie(movie.id)}>
-                Delete Movie    
-            </button>
-            <p></p>
+        <div className="moviecard-control">   
             <button className="ctrl2-btn" disabled={watchedMovie} onClick={() => setMovieWatched(movie)}>
                 {watchedMovie ? 'Watched\non: ' + getCurrentDate(): 'Watch'}
             </button>
+            <p></p>
+            <button className="ctrl-btn" onClick={() => removeMovie(movie.id)}>
+                Delete Movie    
+            </button>       
         </div>
         
         

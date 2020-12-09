@@ -37,6 +37,7 @@ export const GlobalProvider = props => {
     <GlobalContext.Provider value={{
         watchlist: state.watchlist, 
         watched: state.watched, 
+        upcoming: state.upcoming,
         addMovieToWatchlist,
         removeMovie,
         setMovieWatched,
