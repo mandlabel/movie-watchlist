@@ -31,9 +31,6 @@ export const GlobalProvider = props => {
     const setMovieWatched = (movie) => {
         dispatch({ type: "SET_MOVIE_TO_WATCHED", payload: movie });
     }
-    const setMovieUnWatched = (id) => {
-        dispatch({ type: "SET_MOVIE_TO_UNWATCHED", payload: id });
-    }
     
     
     return ( 
@@ -43,7 +40,6 @@ export const GlobalProvider = props => {
         addMovieToWatchlist,
         removeMovie,
         setMovieWatched,
-        setMovieUnWatched,
         }}>
         {props.children}
     </GlobalContext.Provider>

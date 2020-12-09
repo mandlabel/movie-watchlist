@@ -12,7 +12,7 @@ const getCurrentDate = (separator='/') => {
     return `${year}${separator}${month<10?`0${month}`:`${month}`}${separator}${date}`
 }
 export const MovieControls = ({movie}) => {
-    const { watched, removeMovie, setMovieWatched, setMovieUnWatched } = useContext(GlobalContext);
+    const { watched, removeMovie, setMovieWatched } = useContext(GlobalContext);
 
     let themovieWatched = watched.find(o => o.id === movie.id);
 

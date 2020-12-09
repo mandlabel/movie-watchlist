@@ -26,13 +26,6 @@ export default (state, action) =>
                 watched: [action.payload, ...state.watched],   
                 
             };
-        case "SET_MOVIE_TO_UNWATCHED": 
-            return {
-                ...state,
-                watched: state.watched.filter(
-                (movie) => movie.id !== action.payload
-                ),
-            };
         default:
             return state;  
     }
