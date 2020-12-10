@@ -1,3 +1,5 @@
+Elérhetőség: http://www.blowycrack.infora.hu/
+
 Film "kívánságlista"
 
 Az alkalmazás három oldalból épül fel:
@@ -12,8 +14,8 @@ A WatchListen találjuk az összes filmet, amit a keresőből hozzáadtunk. Ezek
 
 UPDATE 1:
 
-[Megtekint gomb]: A megtekintéssel a 'Watch' gombunk átvált zöldre és megjelenik az az napi dátum a gombon, hogy később tudjuk mikor néztük meg az adott filmet.
-[Törlés]: Ha töröljük a filmet, újra hozzáadhatóvá válik a keresőből a watchlisthez.
+Megtekint gomb: A megtekintéssel a 'Watch' gombunk átvált zöldre és megjelenik az az napi dátum a gombon, hogy később tudjuk mikor néztük meg az adott filmet.
+Törlés gomb: Ha töröljük a filmet, újra hozzáadhatóvá válik a keresőből a watchlisthez.
 
 UPDATE 2:
 
