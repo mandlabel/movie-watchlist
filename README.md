@@ -18,4 +18,4 @@ UPDATE 1:
 UPDATE 2:
 
 - Upcoming fül:
-  Az összes közeljövőben megjelenő, vagy pár napja megjelent újdonságok közül válogathatunk. (Itt is működödik az 'Add gomb')
+  Az összes közeljövőben megjelenő, vagy pár napja megjelent újdonságok közül válogathatunk. (Itt is működik az 'Add gomb')
