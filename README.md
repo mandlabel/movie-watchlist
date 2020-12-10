@@ -16,4 +16,6 @@ UPDATE 1:
 [Törlés]: Ha töröljük a filmet, újra hozzáadhatóvá válik a keresőből a watchlisthez.
 
 UPDATE 2:
-Upcoming fül, ahol az összes közeljövőben megjelenő, vagy pár napja megjelent újdonságok közül válogathatunk. (Itt is működödik az 'Add gomb')
+
+- Upcoming fül:
+  Az összes közeljövőben megjelenő, vagy pár napja megjelent újdonságok közül válogathatunk. (Itt is működödik az 'Add gomb')
